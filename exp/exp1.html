@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Choose Your Own Adventure Game: Mother Duck</h2>
+
+    <script>
+        var gameon = 0;
+
+        // scene 1
+        numDucklings = prompt("You are a mother goose with several baby ducklings. How many ducklings do you have?", "");
+        ducklings = Number(numDucklings);
+        
+        if (ducklings >= 3 && ducklings <= 10) {
+            console.log(`You have ${ducklings} lovely ducklings!`)
+            gameon = 1;
+        } else if (ducklings <= 3){
+            console.log(`You've chosen to have ${ducklings} ducklings. All of them got sick and died. \nGAME OVER`)     
+        } else if (ducklings >= 10) {
+            console.log(`You've chosen to have ${ducklings} ducklings. You died from the pain of popping out THAT many babies. \nGAME OVER`)        
+        } else {
+            console.log("You failed to enter a number. You lose for not being able to follow directions. \nGAME OVER")
+        }
+
+        //scene 2
+        if (gameon == 1) {
+            var response = prompt("It's a new day! Would you like to count your ducklings? (Y/N)","") 
+            var res = response.toLowerCase();
+
+            if (res == "y" || res == "yes") {
+                for (i=1; i<=ducklings; i++) {
+                    gameon = 2;
+                    console.log(`Duckling ${i}`);
+                }
+                console.log("All ducklings have been counted for!")
+            } else if (res == "n" || res == "no") {
+                console.log("You didn't realize that you are missing a duckling. You fail at being an attentative parent. \nGAME OVER")
+            } else {
+                console.log("It said to input YES or NO. You lose for sucking at reading directions. \nGAME OVER")
+            }
+        } 
+
+        //scene 3
+        if (gameon == 2) {
+            var reply = prompt("It's hot today! The ducklings want to go for a swim. Do you take them? (Y/N)","");
+            var rep = reply.toLowerCase();
+
+            if (rep == "y" || rep == "yes") {
+                console.log("Great! The ducklings are very pleased with your compliance. They have a wonderful day swimming around.")
+                gameon = 3;
+            } else if (rep == "n" || rep == "no") {
+                console.log("The ducklings are extremely displeased with your decision. They all grow cannibalistic teeth and maul you for non-compliance. \nGAME OVER")
+            } else {
+                console.log("Can you read? It says input YES or NO. Get a grip. \nGAME OVER")
+            }
+        }
+
+        // scene 4
+        if (gameon == 3) {
+            var response = prompt("There are some humans nearby throwing bread crumbs into the pond. Do you allow your ducklings to eat the bread crumbs?","");
+            var res = response.toLowerCase();
+
+            if (res == "y" || res == "yes") {
+                console.log("Your ducklings choke on the breadcrumbs and all die. Every last one of them. \nGAME OVER")
+            } else if (res == "n" || res == "no") {
+                console.log("Your ducklings are not happy, but they don't like humans anyway. They splash water all over you.")
+                gameon = 4;
+            } else {
+                console.log("It's time to get some new glasses since you CAN'T READ. Options are YES or NO. \nGAME OVER")
+            }
+        }
+
+        // scene 5 
+        if (gameon ==4) {
+            var response = prompt("Another successful day as a Mother Duck! What letter grade would you like to give this assignment? (A,B,C,D,F)")
+            var res = response.toLowerCase();
+
+            if (res == "a") {
+                console.log("Thank you for helping out my GPA! \nYOU WIN!")
+            } else if (res == "b" || res == "c" || res == "d" || res == "f") {
+                console.log("Ummm what was wrong with my experiment? You know what, YOU'RE wrong. You lose out of spite. \nGAME OVER")
+            } else {
+                console.log("That's, like, not a letter grade. YOU get a F for not being able to follow instructions. \nGAME OVER")
+            }
+        }
+        
+
+    </script>
+    
+</body>
+</html>
