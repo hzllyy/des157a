@@ -71,6 +71,15 @@ body {
   /* transform-origin: top; */
   transform: scaleY(4.25);
   margin-top: -73px;
+  animation-name: stretchN;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stretchN {
+  from {transform: scaleY(4.25); margin-top: -73px;}
+  to {transform: scaleY(5); margin-top: -50px}
 }
 
 #t {
@@ -161,6 +170,15 @@ body {
 #one {
   transform: scaleY(4.25);
   margin-top: -73px;
+  animation-name: stretchOne;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stretchOne {
+  from {transform: scaleY(4.25); margin-top: -73px;}
+  to {transform: scaleY(5); margin-top: -50px}
 }
 
 #two {
@@ -328,7 +346,7 @@ div ul a {
 #parent {
   display: flex;
   justify-content: center;
-  padding-top: 250px;
+  margin-top:22%;
 }
 
 #col-1 {
@@ -357,8 +375,8 @@ div ul a {
 }
 
 #class {
+
   text-align: center;
   font-size: 50px;
-  margin-top: 40px;
   letter-spacing: 5px;
 }
