@@ -1,0 +1,330 @@
+.koh-santepheap-regular {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.kreon-class {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kiwi-maru-regular {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #465E4E;
+  height: 750px;
+}
+
+#parent {
+  z-index: 1;
+}
+
+#title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  color: #E2D7BF;
+  font-family: "Kreon";
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 265px;
+  font-size: 40px;
+  z-index: -1;
+}
+
+#interactive {
+  display: flex;
+  height: 200px;
+  width: 580px;
+  justify-content: space-between;
+  padding: 0 30px 0 0;
+}
+
+#i {
+  /* transform-origin: top; */
+  transform: scaleY(5);
+  margin-top: -50px;
+}
+
+#n {
+  /* transform-origin: top; */
+  transform: scaleY(4.25);
+  margin-top: -73px;
+}
+
+#t {
+  transform: scaleY(3.7);
+  margin-top: -94px;
+}
+
+#e {
+  transform: scaleY(3.1);
+  margin-top: -123.5px;
+}
+
+#r {
+  transform: scaleY(2.6);
+  margin-top: -156px;
+}
+
+#a {
+  transform: scaleY(2.2);
+  margin-top: -189px;
+}
+
+#c {
+  transform: scaleY(1.9);
+  margin-top: -220px;
+}
+
+#t2 {
+  transform: scaleY(1.6);
+  margin-top: -257px;
+}
+
+#i2 {
+  transform: scaleY(1.4);
+  margin-top: -287px;
+}
+
+#v {
+  transform: scaleY(1.25);
+  margin-top: -313px;
+}
+
+#e2 {
+  transform: scaleY(1.15);
+  margin-top: -333px;
+}
+
+#media {
+  display: flex;
+  height: 200px;
+  width: 280px;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+
+#m {
+  transform: scaleY(1.25);
+  margin-top: -313px;
+}
+
+#e3 {
+  transform: scaleY(1.6);
+  margin-top: -257px;
+}
+
+#d {
+  transform: scaleY(2.2);
+  margin-top: -189px;
+}
+
+#i3 {
+  transform: scaleY(2.6);
+  margin-top: -156px;
+}
+
+#a2 {
+  transform: scaleY(3.1);
+  margin-top: -123.5px;
+}
+
+#ii {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  padding: 0 0 0 30px;
+}
+
+#one {
+  transform: scaleY(4.25);
+  margin-top: -73px;
+}
+
+#two {
+  transform: scaleY(5);
+  margin-top: -50px;
+}
+
+#orange {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#name {
+  color: white;
+  font-family: "Koh Santepheap";
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 16px;
+  margin-top: -30px;
+}
+
+#holly {
+  display: flex;
+  padding-right: 50px;
+  width: 250px;
+  justify-content: space-between;
+}
+
+#H {
+  transform-origin: center;
+  transform: rotate(-35deg);
+  margin-top: -90px;
+}
+
+#O {
+  transform-origin: center;
+  transform: rotate(-30deg);
+  margin-top: -124px;
+}
+
+#L {
+  transform-origin: center;
+  transform: rotate(-25deg);
+  margin-top: -150px;
+}
+
+#LL {
+  transform-origin: center;
+  transform: rotate(-18deg);
+  margin-top: -170px;
+}
+
+#Y {
+  transform-origin: center;
+  transform: rotate(-8deg);
+  margin-top: -181px;
+}
+
+#Z {
+  transform-origin: center;
+  transform: rotate(8deg);
+  margin-top: -186px;
+}
+
+#HH {
+  transform-origin: center;
+  transform: rotate(15deg);
+  margin-top: -175px;
+}
+
+#E {
+  transform-origin: center;
+  transform: rotate(25deg);
+  margin-top: -154px;
+}
+
+#N {
+  transform-origin: center;
+  transform: rotate(30deg);
+  margin-top: -124px;
+}
+
+#G {
+  transform-origin: center;
+  transform: rotate(35deg);
+  margin-top: -88px;
+}
+
+#zheng {
+  display:flex;
+  padding-left: 50px;
+  width: 280px;
+  justify-content: space-between;
+}
+
+#class {
+  color: white;
+  font-family: "Koh Santepheap"
+}
+
+div h3 {
+  font-family: "Kreon";
+  color: #FFF6E1;
+  text-align: center;
+}
+
+div ul {
+  padding: 0;
+}
+
+div ul li {
+  list-style-type: none;
+  background-color: #FFF6E1;
+  width: 100px;
+  padding: 8px; 
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid #FFF6E1;
+}
+
+div ul li:hover {
+  background-color:#E99152;
+  color:#FFF6E1;
+  border: 2px solid #FFF6E1;
+}
+
+#randd ul li {
+  width: 200px;
+}
+
+#final ul li {
+  width: 200px;
+}
+
+div ul a {
+  text-decoration: none;
+  color: #E99152;
+  
+} 
+
+#parent {
+  display: flex;
+  justify-content: center;
+  padding-top: 230px;
+}
+
+#col-1 {
+  padding: 120px 55px 0 0;
+}
+
+#col-3 {
+  padding: 180px 0 0 20px;
+}
+
+#col-1 ul li {
+  width: 74px;
+  padding: 5px;
+}
+
+.seperate {
+  display: flex;
+}
+
+#class {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  letter-spacing: 5px;
+}
