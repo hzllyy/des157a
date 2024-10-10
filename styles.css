@@ -300,13 +300,13 @@ div ul li {
   border: 2px solid #FFF6E1;
 }
 
-div ul li:hover {
+div ul li:hover{
   background-color:#E99152;
   border: 2px solid #FFF6E1;
   color:#FFF6E1;
 }
 
-div ul li a:hover {
+div ul li:hover a {
   color:#FFF6E1;
 }
 
