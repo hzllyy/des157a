@@ -64,7 +64,7 @@ body {
 
 @keyframes stretch {
   from {transform: scaleY(5); margin-top: -50px;}
-  to {transform: scaleY(5.5); margin-top: -37.5px}
+  to {transform: scaleY(6); margin-top: -27.5px}
 }
 
 #n {
@@ -174,7 +174,7 @@ body {
 
 @keyframes stretch2 {
   from {transform: scaleY(5); margin-top: -50px;}
-  to {transform: scaleY(5.5); margin-top: -37.5px}
+  to {transform: scaleY(6); margin-top: -27.5px}
 }
 
 #orange {
@@ -304,6 +304,7 @@ div ul li:hover{
   background-color:#E99152;
   border: 2px solid #FFF6E1;
   color:#FFF6E1;
+  cursor: pointer;
 }
 
 div ul li:hover a {
