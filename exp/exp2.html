@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+        }
+
+        .box:hover {
+            cursor: pointer;
+        }
+
+        .selected {
+            border: 5px solid black;
+        }
+
+        #result {    
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #finalColorBox {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 35px auto 0 auto;
+        }
+
+        #firstColor, #secondColor {
+            display: flex;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+
+        #interactive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #submit {
+            display: block;
+            margin: auto;
+            color: white;
+            background-color: black;
+            width: 80px;
+            padding: 3px;
+            border-radius: 15px;
+        }
+
+        #submit:hover {
+            cursor: pointer;
+            border: 2px groove black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header">Color Mixer</h1>
+
+    <div id="interactive">
+
+        <p>Choose your first color:</p>
+        <div id="firstColor">
+            <div class="box" id="red-one" style="background-color:red;" onclick="setColor('red','red-one', 0)"></div>
+            <div class="box" id="yellow-one" style="background-color:yellow;" onclick="setColor('yellow','yellow-one', 0)"></div>
+            <div class="box" id="blue-one" style="background-color:blue;" onclick="setColor('blue', 'blue-one', 0)"></div>
+        </div>
+
+        <p>Choose your second color:</p>
+        <div id="secondColor">
+            <div class="box" id="red-two" style="background-color:red;" onclick="setColor('red', 'red-two',1)"></div>
+            <div class="box" id="yellow-two" style="background-color:yellow;" onclick="setColor('yellow', 'yellow-two', 1)"></div>
+            <div class="box" id="blue-two" style="background-color:blue;" onclick="setColor('blue', 'blue-two', 1)"></div>
+        </div>
+    </div>
+
+    <div class="box" id="finalColorBox" style="background-color:white; border: 5px solid black;"></div>
+    <div id="result"></div>
+    <div id="submit" onclick="UI()"><p>SUBMIT</p></div>
+
+    <script>
+        // initialize colors
+        let selectedColors = [null, null];
+        let finalColor = null;
+
+        let selectedBox1 = null;
+        let selectedBox2 = null;
+
+        // Set the color in the array (either the first or second color)
+        function setColor(color, boxID, index) {
+            selectedColors[index] = color;
+
+            // Deselect previously selected box and apply the selected class to the new one
+            if (index === 0) {
+                if (selectedBox1 !== null && document.getElementById(selectedBox1) !== null) {
+                    document.getElementById(selectedBox1).classList.remove('selected');
+                }
+                selectedBox1 = boxID;
+            } else {
+                if (selectedBox2 !== null && document.getElementById(selectedBox2) !== null) {
+                    document.getElementById(selectedBox2).classList.remove('selected');
+                }
+                selectedBox2 = boxID;
+            }
+            document.getElementById(boxID).classList.add('selected');
+            console.log(`Selected ${color} as color ${index + 1}`);
+
+            mixColors(); 
+        }
+
+        function mixColors() {
+            let [color1, color2] = selectedColors;
+
+            if (color1 && color2) {
+                let resultText = '';
+                finalColor = '';
+
+                if (color1 === 'red' && color2 == 'yellow' || color1 == 'yellow' && color2 == 'red') {
+                    resultText = "You've made Orange!";
+                    finalColor = "orange";
+                } else if (color1 === 'yellow' && color2 == 'blue' || color1 == 'blue' && color2 == 'yellow') {
+                    resultText = "You've made Green!";
+                    finalColor = "green";
+                } else if (color1 === 'red' && color2 == 'blue' || color1 == 'blue' && color2 == 'red') {
+                    resultText = "You've made Purple!";
+                    finalColor = "purple"
+                } else {
+                    resultText = "You've selected two of the same color."
+                    finalColor = color1;
+                }
+                document.getElementById('result').innerText = resultText;
+                document.getElementById('finalColorBox').style.backgroundColor = finalColor;
+
+                return finalColor;
+            }
+        }
+
+        function UI() {
+            let mixedColor = mixColors();
+
+            if (mixedColor) {
+                var answer = prompt("Would you like to change the color of the header to your created color? (yes/no)", "");
+
+                var ans = answer.toLowerCase();
+            
+                if (ans == "yes" || ans == "y") {
+                    document.getElementById("header").style.color = mixedColor;
+                } else {
+                    alert("Header color change is cancelled.")
+                }
+            } else {
+                alert("Please select two colors first!");
+            }
+            
+        }
+    </script>
+</body>
+</html>
