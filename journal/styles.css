@@ -1,0 +1,60 @@
+.urbanist-font> {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: #EEE4E8;
+    color: #5C4378;
+    font-family: "Urbanist";
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+article {
+    width: 500px;
+    display: block;
+    margin: auto;
+    background-color: #E3CDD6;
+    padding: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.visual {
+    width: 620px;
+    background-color: #9882AF;
+    padding: 10px 0 10px 0;
+    display: block;
+    margin: 40px auto 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.visual img {
+    display: block;
+    margin: auto;
+}
+
+.header {
+    background-color:#E3CDD6;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.name {
+    margin-bottom: 0;
+}
+
+article p {
+    font-size: 14px;
+    padding: 8px 0 8px 0;
+}
