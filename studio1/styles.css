@@ -1,0 +1,50 @@
+.fascinate-inline-regular {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.gowun-dodum-regular {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    width: 822px;
+    margin: auto;
+    display: flex;
+}
+
+#smaller {
+    width: 822px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    font-family: "Fascinate Inline";
+    font-size: 130px;
+    margin: 0;
+    letter-spacing:24px;
+    color: #533C27;
+}
+
+p {
+    font-family: "Gowun Dodum";
+    margin-top: 0;
+    padding-left: 20px;
+    color: #533C27;
+}
+
+body {
+    background-color: #F7E6CD;
+}
+
+input[type="text"]:focus {
+    border:2px solid #533C27;
+    outline: 0;
+}
+
