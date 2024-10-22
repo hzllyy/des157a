@@ -54,7 +54,6 @@ body {
 }
 
 #i {
-  /* transform-origin: top; */
   transform: scaleY(5);
   margin-top: -50px;
   animation-name: stretch;
@@ -69,7 +68,6 @@ body {
 }
 
 #n {
-  /* transform-origin: top; */
   transform: scaleY(4.25);
   margin-top: -73px;
   animation-name: stretchN;
