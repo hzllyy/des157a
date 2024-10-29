@@ -7,6 +7,8 @@
 
     <link href="styles.css" rel="stylesheet">
 
+    <script src="script.js" defer></script>
+
     <!-- Fascinate font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,17 +26,56 @@
         <img src="images/main_img.png" alt="bakery" height="350" width="400" id="bakery">
 
         <form>
+            <label for="firstnoun">Enter a <strong>Noun</strong>:</label>
+            <input type="text" id="firstnoun" name="noun1" placeholder="Noun" size="30"><br>
 
-            <p>Welcome to <input type="text" name="noun" placeholder="noun">’s bakery, where we sell the city’s most <input type="text" name="adj" placeholder="adjective"> pastries! Please, try a sample of our newest creation, <input type="text" name="adj" placeholder="adjective"> cookies, which contains our secret ingredient: <input type="text" name="food" placeholder="type of food">. 
+            <label for="firstadj">Enter an <strong>Adjective</strong>:</label>
+            <input type="text" id="firstadj" name="adj1" placeholder="Adjective" size="25"><br>
 
-            If that doesn’t suit your taste, why not try our famous <input type="text" name="ingredient" placeholder="ingredient"> croissants? They are painstakingly crafted by our <input type="text" name="animal" placeholder="animal plural"> chefs. Rest assured, their hygiene habits are top-tier, as we trained them specially at a boarding school in <input type="text" name="country" placeholder="country">.
-                
-            <!-- <p>And to quench your thirst, please take a look at our drinks menu. We have (flower) (beverage), (color) (beverage), and (plant) milk. Our drinks are all completely vegan, and have even been highly praised by (celebrity)!</p> -->
-                
-            When you are satisfied with your meal, don’t forget to pay! At <input type="text" name="noun" placeholder="noun">’s bakery, we take dining and dashing very seriously– if you leave without paying, we will <input type="text" name="verb" placeholder="verb"> you. Thank you for visiting <input type="text" name="noun" placeholder="noun">’s bakery, and we hope you have a/an <input type="text" name="adjective" placeholder="adjective"> day!</p>
-            
+            <label for="secondadj">Enter Another <strong>Adjective:</strong></label>
+            <input type="text" id="secondadj" name="adj2" placeholder="Adjective" size="19"><br>
+
+            <label for="foodie">Enter a <strong>Type of Food:</strong></label>
+            <input type="text" id="foodie" name="food1" placeholder="Food" size="22"><br>
+
+            <label for="ingredients">Enter an <strong>Ingredient:</strong></label>
+            <input type="text" id="ingredients" name="ingredient1" placeholder="Ingredient" size="24"><br>
+
+            <label for="animals">Enter an <strong>Animal (plural):</strong></label>
+            <input type="text" id="animals" name="animal1" placeholder="Animal" size="18"><br>
+
+            <label for="countryy">Enter a <strong>Country:</strong></label>
+            <input type="text" id="countryy" name="country1" placeholder="Country" size="27"><br>
+
+            <label for="verbb">Enter a <strong>Verb:</strong></label>
+            <input type="text" id="verbb" name="verb" placeholder="Verb" size="31"><br>
+
+            <label for="thirdadj">Enter Another <strong>Adjective:</strong></label>
+            <input type="text" id="thirdadj" name="adj3" placeholder="Adjective" size="19"><br>
+
+            <button id="btn">SUBMIT</button>
         </form>
     </main>
+
+    <section id="overlay" class="hidden">
+        <h2>x</h2>
+        <h1 id="header2">MAD-LIBS</h1>
+
+        <div id="flexbox">
+            <img src="images/main_img.png" alt="bakery" height="350" width="400">
+
+            <div id="text">
+
+                <p>Welcome to <span class="noun1" id="noun1">noun1</span>’s bakery, where we sell the city’s most <span id="adj1">adj1</span> pastries! Please, try a sample of our newest creation, <span id="adj2">adj2</span> cookies, which contains our secret ingredient: <span id="food">food</span>.</p>
+
+                <p>If that doesn’t suit your taste, why not try our famous <span id="ingredient">ingredient</span> croissants? They are painstakingly crafted by our <span id="animal">animal</span> chefs. Rest assured, their hygiene habits are top-tier, as we trained them specially at a boarding school in <span id="country">country</span>.</p>
+                        
+                <p>When you are satisfied with your meal, don’t forget to pay! At <span class="noun1">noun1</span> bakery, we take dining and dashing very seriously– if you leave without paying, we will <span id="verb">verb</span> you. Thank you for visiting <span class="noun1">noun1</span>'s bakery, and we hope you have <span id="an">a</span> <span id="adj3">adj3</span> day!</p>
+
+            </div>
+        </div>
+
+    </section>
         
     <div id="smaller">
         <img src="images/strawberries.png" alt="strawberries" height="90" width="260" id="strawberries">
