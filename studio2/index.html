@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture Museum</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="index.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Mate+SC&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="museum-container">
+        <div id="backdrop">
+            <section id="introduction">
+                <h1>EVERY PICTURE</h1>
+
+                <p>1. Use the right and left arrow keys or the "a" and "d" keys<br> to move left and right respectively.</p>
+                <p>2. Click on exhibits directly to inspect.</p>
+
+                <div class="rect"></div>
+            </section>
+
+            <section id="quote">
+                <div class="exhibit">
+                    <img src="images/white-square.png" class="picture" id="quote-img" alt="square">
+                </div>
+
+                <div class="layer">
+                    <div class="overlay">
+                        <div class="exit-button">
+                            <img src="images/white-square.png" width="20" height="20" alt="square">
+                        </div>
+
+                        <div id="quote-base">
+                            <p>" for i am a mosaic of everyone i've ever loved. "</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="grandma">
+                <div class="exhibit">
+                    <img src="images/frame-1.png" class="picture" alt="frame-1">
+                </div>
+
+                <div class="layer">
+                    <div class="overlay">
+                        <img src="images/left-btn.png" alt="left=btn" width="50" height="50" class="left-btn">
+
+                        <img src="images/right-btn.PNG" alt="right-btn" width="50" height="50" class="right-btn">
+
+                        <div class="exit-button">
+                            <img src="images/white-square.png" width="20" height="20" alt="square">
+                        </div>
+
+                        <div class="slides">
+                            <!-- slide 1 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My grandma and I met in the year 2002.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/grandma-and-me.jpeg" alt="grandma-and-me" width="300" height="230">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 2 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>She taught me how to fold dumplings. So now when I miss her, I fold many, many, many dumplings.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/dumplings.png" alt="dumplings" width="300" height="400">;
+                                </div>
+                            </div>
+
+                            <!-- slide 3 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My grandma spent the colder part of the year in China, so she was away when she passed. When my mom went home last year, she found the following note in my grandma’s nightstand. It was a throwaway scribble on a napkin, a hastily written declaration that my grandma was mine.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/note.jpeg" alt="note" width="300" height="400">;
+                                </div>
+                            </div>
+
+                            <!-- slide 4 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>When it’s Lunar New Year, I like to invite my friends over to wrap dumplings together.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/cny.jpeg" alt="cny" width="300" height="400">;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+            
+            <section id="dad">
+                
+                <div class="exhibit">
+                    <img src="images/frame-2.png" class="picture" alt="frame-2">
+                </div>
+
+                <div class="layer">
+                    <div class="overlay">
+
+                        <img src="images/left-btn.png" alt="left=btn" width="50" height="50" class="left-btn">
+
+                        <img src="images/right-btn.PNG" alt="right-btn" width="50" height="50" class="right-btn">
+
+                        <div class="exit-button">
+                            <img src="images/white-square.png" width="20" height="20" alt="square">
+                        </div>
+                        
+                        <div class="slides">
+                            <!-- slide 1 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My dad and I also met in the year 2002. </p>
+                                        <P>Growing up, when people asked me what my dad did for work, I would just say “computer.” As a budding Silicon Valley SWE in the early 2000s, my dad did what any smart man would do: put me in front of a computer and say, “this is the future, so start getting familiar.”</P>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/dad-and-me.jpeg" alt="dad-and-me" width="300" height="330">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 2 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My dad wanted me to be a doctor, but he was happy when I showed interest in coding anyway. He tells me that building games is a waste of time, but then buys me books on building games.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/books.jpeg" alt="dad-and-me" width="300" height="580">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 3 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>When I look at Mr. Worm, I remember to be grateful to my dad.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/0245.png" alt="dad-and-me" width="300" height="300">;
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="sister">
+                <div class="exhibit">
+                    <img src="images/frame-3.png" class="picture" alt="frame-3">
+                </div>
+
+                <div class="layer">
+
+                        <div class="overlay">
+                            <img src="images/left-btn.png" alt="left=btn" width="50" height="50" class="left-btn">
+
+                            <img src="images/right-btn.PNG" alt="right-btn" width="50" height="50" class="right-btn">
+
+                            <div class="exit-button">
+                                <img src="images/white-square.png" width="20" height="20" alt="square">
+                            </div>
+                        </div>
+
+                        <div class="slides">
+                            <!-- slide 1 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My sister and I met in the year 3812 B.C.E. </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/grace-and-holly.jpg" alt="grace-and-holly" width="300" height="250">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 2 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>My sister loved anime as a kid. I was a faithful servant, so I followed my sister in watching pirated anime off youtube, which eventually led us to learning how to draw, which eventually led to digital art. By the end of the 2020 quarantine, sister and I were both running art Instagrams with thousands of followers.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/hxh.png" alt="hxh" width="300" height="225">;
+                                    <img src="images/nishinoya.png" alt="nishi" width="300" height="300">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 3 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>She encouraged me to participate in fan projects. Designing proved to be pretty fun.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/cards1.png" alt="cards1" width="300" height="200">;
+                                    <img src="images/cards2.png" alt="cards2" width="300" height="200">;
+                                </div>
+
+                            </div>
+
+                            <!-- slide 4 -->
+                            <div class="overlay-content">
+
+                                <div class="plaque-container">
+                                    <div class="plaque">
+                                        <p>Whenever I finish a project for my design classes, I show my sister before I turn it in.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="pic">
+                                    <img src="images/smoke.png" alt="smoke" width="300" height="410">;
+                                </div>
+                            
+                            </div>
+                
+                        </div>
+                </div>
+            </section>
+
+            <section id="miffy">
+
+                <div id="miffy-pic">
+                    <img src="images/miffy.PNG" class="picture" width="200" height="200" alt="miffy">
+                </div>
+                
+                <div id="mif-text">
+                    <p>you have reached the end.</p>
+                </div>
+
+            </section>
+            
+        </div>
+    </div>
+    <canvas id="game" width="1200" height="750">
+    </canvas>
+    
+</body>
+</html>
