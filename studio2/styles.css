@@ -70,7 +70,7 @@ body {
     position: fixed;
     bottom:0;
     left:0;
-    
+    z-index: -10;
 }
 
 .exhibit {
@@ -135,7 +135,8 @@ section {
 }
 
 #quote-base {
-    background-color: #ECE5D6;
+    background-color: #834449;
+    color: white;
     font-family: "Montserrat Alternates";
     font-size: 13px;
     letter-spacing: 2px;
@@ -228,3 +229,91 @@ section {
     justify-content: center;
 }
 
+#plant {
+     position: absolute;
+     top: 340px;
+}
+
+#nike {
+    position: absolute;
+    top: 225px;
+    left: 1100px;
+}
+
+.rope {
+    position: absolute;
+    top: 460px;
+    left: 410px;
+}
+
+#david {
+    position: absolute;
+    top: 310px;
+    left: 1100px;
+}
+
+#girl {
+    position: absolute;
+    top: 310px;
+    left: 1100px;
+}
+
+#slide2 {
+    padding-left: 35px;
+}
+
+#infodesk {
+    position: absolute;
+    top: 380px;
+}
+
+#label {
+    color: white;
+    font-family: "Mate SC";
+    letter-spacing: 6px;
+    font-size: 15px;
+
+    display: block;
+    position: absolute;
+    top: 553px;
+}
+
+#brochure {
+    color: #513E21;
+    font-family: "Mate SC";
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    position: absolute;
+    top: 390px;
+    left: 633px;
+}
+
+.picture {
+    cursor: pointer;
+}
+
+.statue-text {
+    color: white;
+    display: block;
+    position: absolute;
+    top: 34%;;
+    right: 15%;
+    font-family: "Gentium Plus";
+    text-align: center;
+    width: 450px;
+}
+
+.statue-text h6 {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.statue-text p {
+    font-size: 14px;
+}
+
+.statue {
+    padding-left: 10px;
+    padding-top: 20px;
+}
