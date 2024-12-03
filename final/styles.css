@@ -5,3 +5,9 @@ body {
 h1 {
     text-align: center;
 }
+
+img {
+    display: block;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
