@@ -16,8 +16,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-heading {
-  padding-top: 50px;
+#heading {
+  padding-top: 0;
   display: flex;
   gap: 22px;
   font-size: 35px;
