@@ -141,7 +141,7 @@ button:hover {
     z-index: 1;
 }
 
-#draw {
+#draw-img {
     position: absolute;
     bottom: 200px;
     right: 80px;

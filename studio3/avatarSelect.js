@@ -23,11 +23,13 @@
 
     left.addEventListener("click", function() {
         avatarIndex = (avatarIndex - 1 + avatarArray.length) % avatarArray.length;
+        playClickSound();
         updateAvatar();
     });
 
     right.addEventListener("click", function() {
         avatarIndex = (avatarIndex + 1) % avatarArray.length;
+        playClickSound();
         updateAvatar();
     });
 
@@ -37,6 +39,7 @@
 
     form.addEventListener("submit", function(evt) {
         evt.preventDefault();
+        playLowSound();
 
         const playerName = nameInput.value;
         const errorMessageContainer = document.querySelector("#error-message");
@@ -49,7 +52,10 @@
             sessionStorage.setItem("playerName", playerName); 
             sessionStorage.setItem("selectedAvatar", avatarIndex);
 
-            window.location.href = "gameplay.html";
+            setTimeout(() => {
+                window.location.href = "gameplay.html";
+            }, 500);
+
         } else {
             const form = document.getElementById("playerForm");
             const errorMessage = document.createElement("p");
@@ -65,5 +71,18 @@
 
         
     })
+
+    const clickSound = new Audio("audios/click.mp3");
+    const clickLowSound = new Audio("audios/click-low.mp3");
+
+    function playClickSound() {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    }
+
+    function playLowSound() {
+        clickLowSound.currentTime = 0;
+        clickLowSound.play();
+    }
 
 }());

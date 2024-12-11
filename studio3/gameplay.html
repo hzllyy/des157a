@@ -20,6 +20,11 @@
 <body>
     <section id="screen">
 
+        <audio id="background-music" autoplay loop>
+            <source src="audios/gameplay.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
         <section id="greyout"></section>
 
         <section id="win">
@@ -45,9 +50,11 @@
 
         <button id="submit">SUBMIT</button>
 
-        <img src="images/deck.png" alt="deck" id="draw">
-        <h3 id="decklabel">DECK</h3>
-
+        <div id="draw">
+            <img src="images/deck.png" alt="deck" id="draw-img">
+            <h3 id="decklabel">DECK</h3>
+        </div>
+        
         <section id="heading">
             <img src="images/lizard-opponent.png" alt="opp" width="288" height="96" id="me">
             <h2 id="round">ROUND 1</h2>

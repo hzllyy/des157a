@@ -9,11 +9,47 @@
     let playerWin = 0;
 
     let round = 1;
+    
+    // audio functions
+    const clickSound = new Audio("audios/click.mp3");
+    const clickLowSound = new Audio("audios/click-low.mp3");
+
+    function playClickSound() {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    }
+
+    function playLowSound() {
+        clickLowSound.currentTime = 0;
+        clickLowSound.play();
+    }
+
+    const winAudio = new Audio("audios/you-win.wav");
+    const tieAudio = new Audio("audios/you-tie.wav");
+    const loseAudio = new Audio("audios/you-lose.mp3");
+
+    function playWinAudio() {
+        winAudio.currentTime = 0;
+        winAudio.play();
+    }
+
+    function playTieAudio() {
+        tieAudio.currentTime = 0;
+        tieAudio.play();
+    }
+
+    function playLoseAudio() {
+        loseAudio.currentTime = 0;
+        loseAudio.play();
+    }
 
     // back button allows user to return to their page
     const back = document.getElementById("backbtn");
     back.addEventListener("click", function() {
-        window.location.href = "index.html";
+        playLowSound();
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 500);
     })
 
     // same avatar array
@@ -129,6 +165,7 @@
                 const index = Array.from(options).indexOf(optionsArray[i]);
 
                 if (!selectedIndex.includes(index)) {
+                    playClickSound();
                     selectedIndex.push(index);
                     numberSelected++;
 
@@ -152,6 +189,7 @@
     // for when the player is ready to play
     submit.addEventListener("click", () => {
         if (numberSelected === 3) {
+            playLowSound();
             oppMove();
         }
     });
@@ -221,7 +259,6 @@
     function winLose() {
 
         if (playerPick === oppPick) {
-            console.log("It's a tie!");
             myCount = myCount + 5;
             oppCount = oppCount + 5;
             updateScore();
@@ -229,7 +266,6 @@
             (playerPick === 0 && oppPick === 2) ||
             (playerPick === 1 && oppPick === 0) ||
             (playerPick === 2 && oppPick === 1) ) {
-                console.log("You win!");
                 setTimeout(() => {
                     player.src = winArray[playerPick];
                     opponent.src = selectedArray[oppPick];
@@ -239,7 +275,6 @@
                 console.log(myCount, oppCount);
                 
         } else {
-            console.log("Opponent wins!");
             setTimeout(() => {
                 player.src = selectedArray[playerPick];
                 opponent.src = winArray[oppPick];
@@ -279,26 +314,26 @@
 
     // allow user to draw from deck
     const deck = document.getElementById("draw");
+    const deckImage = document.getElementById("draw-img");
 
     function drawNew() {
         // highlight deck for user to click
-        deck.src = "images/deck-ready.png"
+        deckImage.src = "images/deck-ready.png"
         deck.style.cursor = "pointer";
-        decklabel.style.cursor = "pointer";
 
         numberSelected = 0;
 
         deck.addEventListener("click", function handleClick() {
+            playLowSound();
 
             for (let i = 0; i < selectedIndex.length; i++) {
                 const redraw = Math.floor(Math.random() * 3);
                 optionsArray[selectedIndex[i]].src = cardArray[redraw];
             }
 
-            deck.src = "images/deck.png";
+            deckImage.src = "images/deck.png";
             deck.removeEventListener("click", handleClick)
             deck.style.cursor = "auto";
-            decklabel.style.cursor = "auto";
 
             resetArrays();
 
@@ -326,18 +361,24 @@
     const lose = document.getElementById("lose");
     const tie = document.getElementById("tie");
 
+    const backgroundMusic = document.getElementById("background-music");
+
    function endGame() {
         greyedOut.style.display = "block";
+        backgroundMusic.pause();
 
         if (playerWin === 1) {
+            playWinAudio();
             win.style.display = "block";
             lose.style.display = "none";
             tie.style.display = "none";
         } else if (playerWin === 2){
+            playLoseAudio();
             lose.style.display = "block";
             win.style.display = "none";
             tie.style.display = "none";
         } else if (playerWin === 3) {
+            playTieAudio();
             lose.style.display = "none";
             win.style.display = "none";
             tie.style.display = "block";
