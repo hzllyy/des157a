@@ -55,7 +55,7 @@
     // same avatar array
     const avatarArray = [
         "images/moth.PNG",
-        "images/fish-left.PNG",
+        "images/fish-left.png",
         "images/lizard-left.PNG"
     ];
 
@@ -68,7 +68,7 @@
     
     // enemy avatar array
     const enemyArray = [
-        "images/moth.png",
+        "images/moth.PNG",
         "images/fish-right.PNG",
         "images/lizard-right.PNG"
     ];
