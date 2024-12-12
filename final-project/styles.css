@@ -1,0 +1,93 @@
+.jersey-10-regular {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  background-color: #F3B681;
+  font-family: "Jersey 10";
+}
+
+#index {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#heading {
+  padding-top: 0;
+  display: flex;
+  gap: 22px;
+  font-size: 35px;
+  justify-content: center;
+  color: #589BA5;
+  letter-spacing: 4px;
+}
+
+#your {
+  color: #E45D76
+}
+
+#container {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-top: 320px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 40px;
+}
+
+#left, #right {
+  cursor: pointer;
+}
+
+form {
+  font-size: 50px;
+  color: #E45D76;
+  text-align: center;
+  padding-top: 75px;
+  line-height: 65px;
+}
+
+#name {
+  height: 30px;
+  width: 350px;
+  border: solid #E45D76 4px;
+  color: #589BA5;
+  border-radius: 15px;
+  font-size: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#name:focus {
+  outline: none;
+  border: solid #E45D76 6px;
+}
+
+#start {
+  font-size: 40px;
+  padding: 0 15px 0 15px;
+  border-radius: 15px;
+
+  color: white;
+  background-color: #589BA5;
+  border: solid #589BA5 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#start:hover {
+  border: solid white 5px;
+}
+

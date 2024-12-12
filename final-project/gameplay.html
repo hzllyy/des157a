@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+
+    <!-- Jersey 10 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Dodum&family=Jersey+10&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- linke to style sheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="internal.css" rel="stylesheet">
+
+    <!-- link to script -->
+     <script src="gameplay.js" defer></script> 
+</head>
+<body>
+    <section id="screen">
+
+        <audio id="background-music" autoplay loop>
+            <source src="audios/gameplay.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
+        <section id="greyout"></section>
+
+        <section id="win">
+            <h1>GAME OVER</h1>
+            <h3>YOU WON!</h3>
+        </section>
+
+        <section id="lose">
+            <h1>GAME OVER</h1>
+            <h3>YOU LOST!</h3>
+        </section>
+
+        <section id="tie">
+            <h1>GAME OVER</h1>
+            <h3>YOU TIED!</h3>
+        </section>
+
+        <p id="enemyname">enemy</p>
+        <p id="enemyscore">000</p>
+
+        <p id="myname">good guy</p>
+        <p id="myscore">000</p>
+
+        <button id="submit">SUBMIT</button>
+
+        <div id="draw">
+            <img src="images/deck.png" alt="deck" id="draw-img">
+            <h3 id="decklabel">DECK</h3>
+        </div>
+        
+        <section id="heading">
+            <img src="images/lizard-opponent.png" alt="opp" width="288" height="96" id="me">
+            <h2 id="round">ROUND 1</h2>
+            <img src="images/user-fish.png" alt="user" width="288" height="96" id="opp">
+            <img src="images/tutorial-btn.png" alt="tutorial-btn" id="tutorial-btn">
+            <button id="backbtn">BACK</button>
+        </section>
+
+        <section id="game">
+            <img src="images/lizard-left.PNG" alt="lizard-left" id="user"></img>
+            <section id="cards">
+                <section id="row1">
+                    <img src="images/default-card.png" alt="default" class="oppmove" id="opp1">
+                    <img src="images/default-card.png" alt="default" class="oppmove" id="opp2">
+                    <img src="images/default-card.png" alt="default" class="oppmove" id="opp3">
+                </section>
+
+                <section id="row2">
+                    <img src="images/default-card.png" alt="default" class="player" id="player1">
+                    <img src="images/default-card.png" alt="default" class="player" id="player2">
+                    <img src="images/default-card.png" alt="default" class="player" id="player3">
+                </section>
+            </section>
+            <img src="images/fish-right.PNG" alt="fish-right" id="opponent">
+        </section>
+
+        <section id="deck">
+            <section id="drawn">
+                <img src="images/default-card.png" alt="default" class="option">
+                <img src="images/default-card.png" alt="default" class="option">
+                <img src="images/default-card.png" alt="default" class="option">
+                <img src="images/default-card.png" alt="default" class="option">
+                <img src="images/default-card.png" alt="default" class="option">
+                <img src="images/default-card.png" alt="default" class="option">
+            </section>
+           
+            <section id="fillin">
+                <img src="images/fillin.png" alt="default">
+            </section>
+        </section>
+
+        <div id="overlay">
+            <div id="tutorial">
+                <p id="exit">x</p>
+ 
+                <img src="images/go-left.png" alt="left" id="go-left">
+                <img src="images/page-1.png" alt="page" id="page">
+                <img src="images/go-right.png" alt="right" id="go-right">
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

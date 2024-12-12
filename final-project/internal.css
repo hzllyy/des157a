@@ -1,0 +1,246 @@
+.jersey-10-regular {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #BC3D54;
+}
+
+#names {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    gap: 350px;
+    padding-left: 148px;
+    margin-top: -8px;
+}
+
+#enemy {
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+
+    gap: 100px;
+    margin-top: -8px;
+    padding-left: 140px;
+}
+
+#enemyname, #enemyscore, #myname, #myscore {
+    position: absolute;
+    color: white;
+    font-size: 22px;
+    padding-top: 35px;
+}
+
+#myname {
+    padding-left: 130px;
+}
+
+#myscore {
+    padding-left: 260px;
+}
+
+#enemyname {
+    padding-left: 508px;
+}
+
+#enemyscore {
+    padding-left: 645px;
+}
+
+#screen {
+    height: 625px;
+    width: 1000px;
+    background: url("images/backdrop.png");
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Jersey 10";
+
+    border: double white 10px;
+    border-radius: 15px;
+}
+
+#heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 15px 0 15px;
+}
+
+h2 {
+    font-size: 30px;
+    background-color: #3A757E;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 4px;
+    border: solid white 5px;
+}
+
+button {
+    font-size: 30px;
+    height: 60px;
+    letter-spacing: 4px;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+
+    color: #3A757E;
+    background-color: white;
+    border: solid #3A757E 5px;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+button:hover {
+    background-color: #E45D76;
+    color: white;
+    border-color: white;
+}
+
+#game {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 80px;
+    gap: 50px;
+    padding-top: 15px;
+}
+
+#row1, #row2 {
+    display: flex;
+    gap: 20px;
+}
+
+#row1 {
+    padding-bottom: 20px;
+}
+
+#deck {
+    position: relative;
+    bottom: -43px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+#drawn {
+    display: flex;
+    gap: 20px;
+}
+
+#submit {
+    position: absolute;
+    bottom: 55px;
+    right: 52px;
+    border-color: white;
+    color: white;
+    background-color: #E45D76;
+    z-index: 1;
+}
+
+#submit:hover {
+    background-color: #589BA5;
+}
+
+#draw-img {
+    position: absolute;
+    bottom: 200px;
+    right: 80px;
+}
+
+#drawn img{
+    cursor: pointer;
+}
+
+#decklabel {
+    position: absolute;
+    bottom: 214px;
+    right: 92px;
+    
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#greyout {
+    height: 625px;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+#win, #lose, #tie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 100;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 10px;
+    display: none;
+}
+
+#overlay {
+    position: absolute;
+    height: 625px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    top: 00px;
+    z-index: 10000;
+    display: block;
+}
+
+#tutorial {
+    height: 625px;
+    width: 1000px;
+}
+
+#exit {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    right: 50px;
+    top: -30px;
+    cursor: pointer;
+}
+
+#page {
+    display: block;
+    margin: auto;
+    padding-top: 35px;
+}
+
+#go-left {
+    position: absolute;
+    top: 280px;
+    left: 60px;
+    cursor: pointer;
+}
+
+#go-right {
+    position: absolute;
+    top: 280px;
+    right: 60px;
+    cursor: pointer;
+}
+
+#tutorial-btn {
+    padding-right: 10px;
+    margin-top: 0;
+    cursor: pointer;
+}

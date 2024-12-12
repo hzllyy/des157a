@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+
+    <!-- Jersey 10 Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Dodum&family=Jersey+10&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- linke to style sheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- link to script -->
+     <script src="avatarSelect.js" defer></script> 
+    
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="audios/pick-player.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <section id="index">
+
+        <section id="heading">
+            <h1>CHOOSE</h1>
+            <h1 id="your">YOUR</h1>
+            <h1>PLAYER</h1>
+        </section>
+
+        <img src="images/container.png" alt="container" id="container" width="215" height="349">
+
+        <section id="buttons">
+            <img src="images/left-btn.png" alt="left-btn" id="left" width="80" height="80">
+            <section id="avatar">
+                <img src="images/moth.PNG" alt="lizard">
+            </section>
+            <img src="images/right-btn.PNG" alt="right-btn" id="right" width="80" height="80">
+        </section>
+
+        <form id="playerForm">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" maxlength="30" autocomplete="off">
+            <br>
+            <section id="error-message">
+            </section>
+            <input type="submit" value="START!" id="start">
+        </form>
+    </section>
+</body>
+</html>

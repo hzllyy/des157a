@@ -92,15 +92,17 @@ button {
     padding: 0 20px 0 20px;
     cursor: pointer;
 
-    background-color: #589BA5;
-    color: white;
-    border: solid white 5px;
+    color: #3A757E;
+    background-color: white;
+    border: solid #3A757E 5px;
     border-radius: 15px;
     z-index: 100;
 }
 
 button:hover {
-    border: solid white 5px;
+    background-color: #E45D76;
+    color: white;
+    border-color: white;
 }
 
 #game {
@@ -137,8 +139,14 @@ button:hover {
     position: absolute;
     bottom: 55px;
     right: 52px;
+    border-color: white;
+    color: white;
     background-color: #E45D76;
     z-index: 1;
+}
+
+#submit:hover {
+    background-color: #589BA5;
 }
 
 #draw-img {
